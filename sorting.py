@@ -3,7 +3,10 @@ import pandas as pd
 
 df = pd.read_csv("heart.csv")
 
-key = input('What do you want to sort it by? ')
+print(
+    'Your options are: [ age, sex, cp, trtbps, chol, fbs, restecg, thalachh, exng, oldpeak, slp, caa, thall, output ]')
+
+key = input('What do you want to sort it by? : ')
 
 sorted_df = df.sort_values(by=[key], ascending=True)
 
